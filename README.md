@@ -1,1 +1,1 @@
-# -JS-Conway-s-Game-of-Life
+# [JS] Conway's Game of Life
