@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/Styles/grid-container.css">
+    <link rel="stylesheet" type="text/css" href="/Styles/grid-item.css">
+    <link rel="stylesheet" type="text/css" href="/Styles/footer.css">
+    <script src="/conwayLifeGame.js"></script>
+  </head>
+  <body>
+    <div class="grid-container"></div>
+    <div class="footer">
+      <button onclick="start()">Start</button>
+      <button onclick="pause()">Pause</button>
+      <button onclick="stop()">Stop</button>
+    </div>
+  </body>
+  <script>
+    let game = new ConwayGame();
+    game.load();
+
+    function start() { game.start() }
+    function pause() { game.pause() }
+    function stop() { game.stop() }
+  </script>
+</html>
